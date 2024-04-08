@@ -2,8 +2,8 @@ public class User {
     private int id;
     private String nick;
 
-    public User(String nick) {
-        this.id = -1;
+    public User(int id, String nick) {
+        this.id = id;
         this.nick = nick;
     }
 
@@ -25,6 +25,6 @@ public class User {
 
     @Override
     public String toString(){
-        return "El usuario: "+this.nick;
+        return id+"-"+this.nick;
     }
 }

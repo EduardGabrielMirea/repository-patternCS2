@@ -7,7 +7,7 @@ public class Cs2Service {
     static java.sql.Connection connection;
 
     public static Connection getConnection() {
-        String host = "jdbc:sqlite:src/main/resources/Cs2BasaDate";
+        String host = "jdbc:sqlite:src/main/resources/Cs2BaseDate";
         if (connection == null) {
             try {
                 connection = java.sql.DriverManager.getConnection(host);
